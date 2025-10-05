@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Premkumar2479/EJS-Node-/issues"
   },
-  "homepage": "https://github.com/Premkumar2479/EJS-Node-#readme"
+  "homepage": "https://github.com/Premkumar2479/EJS-Node-#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
