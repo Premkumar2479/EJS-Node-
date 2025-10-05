@@ -7,8 +7,8 @@ app.set("view engine","ejs");
 
 
 app.get("/",(req,res)=>{
-    res.send("This is me guys hello");
-})
+    res.render("home.ejs");
+});
 app.listen(port,() =>{
     console.log(`listening on port ${port}`);
 });
