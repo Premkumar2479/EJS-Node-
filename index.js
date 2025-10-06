@@ -12,13 +12,19 @@ app.get("/",(req,res)=>{
     res.render("home.ejs");
 });
 
+app.get("/ig/:username",(req,res) =>{
+    const followers = ["adam","bob","steve","john"];
+    let { username } =req.params;
+    res.render("instagram.ejs",{ username, followers});
+});
+
 app.get("/hello",(req,res)=>{
     res.send("hello");
 });
 
 app.get("/rolldice",(req,res)=>{
     let diceVal = Math.floor(Math.random()*6)+1;
-    res.render("rolldice.ejs",{num : diceVal});
+    res.render("rolldice.ejs",{ diceVal});
 });
 
 app.listen(port,() =>{
